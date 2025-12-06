@@ -8,6 +8,8 @@
 
 A collection of production-ready React components for building AI voice interfaces with real-time audio visualization. Featuring Siri-like animations, Web Audio API integration, and canvas-based rendering optimized for 60fps performance.
 
+![Demo](./assets/gif-demo.gif)
+
 ---
 
 ## Features
