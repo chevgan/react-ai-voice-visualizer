@@ -21,21 +21,8 @@ jobs:
           node-version: '20'
           registry-url: 'https://registry.npmjs.org'
 
-      - name: Show versions (debug)
-        run: |
-          node -v
-          npm -v
-
       - name: Ensure npm >= 11.5.1
         run: npm install -g npm@latest
-
-      - name: Show npm after update (debug)
-        run: npm -v
-
-      - name: Clean any .npmrc that could override OIDC
-        run: |
-          if [ -f ~/.npmrc ]; then sed -n '1,200p' ~/.npmrc || true; fi
-          rm -f .npmrc || true
 
       - name: Install deps
         run: npm ci
@@ -43,8 +30,5 @@ jobs:
       - name: Build
         run: npm run build
 
-      - name: Debug: check whoami (should fail or be empty if using OIDC)
-        run: npm whoami || true
-
-      - name: Publish to npm (Trusted Publisher / OIDC)
+      - name: Publish to npm
         run: npm publish --provenance --access public
