@@ -32,7 +32,7 @@ export default defineConfig({
         },
       },
     },
-    sourcemap: true,
+    sourcemap: false,
     minify: 'esbuild',
   },
   resolve: {
