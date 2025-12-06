@@ -1,6 +1,6 @@
 {
   "name": "react-ai-voice-visualizer",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "A collection of React components for building AI voice interfaces with real-time audio visualization",
   "type": "module",
   "main": "./dist/react-ai-voice-visualizer.cjs",
