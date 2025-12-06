@@ -42,3 +42,4 @@ coverage/
 # Misc
 *.md
 !README.md
+assets/
